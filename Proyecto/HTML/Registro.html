@@ -29,7 +29,7 @@
     <div class="registro">
       <h1>Registro BESCOM</h1>
 
-      <form class="R_BESCOM" action="../Bases de datos/Base_datos.php" method="post" autofocus>
+      <form class="R_BESCOM" action="../Bases de datos/Base_datos.php" method="POST" autofocus>
         <label for="N_usuario">Nombre</label> <br>
         <input type="text" name="usuario"  id="N_usuario"> <br><br>
 
@@ -41,6 +41,9 @@
 
         <label for="Contrasena_2">Confirmar contraseña</label> <br>
         <input type="password" name="con_2"  id="Contrasena_2"> <br><br>
+
+        <label for="fecha">Fecha de nacimiento</label><br>
+        <input type="date" name="fecha" value="" id="fecha"><br><br>
 
         <label for="Departamento">Departamento de pertenencia</label> <br>
         <select class="" name="dep" id="Departamento">
@@ -59,7 +62,7 @@
         <div class="Final">
           Acepto términos y condiciones
           <input type="checkbox" name="" value="" class="tc">
-          <a href="#"><input type="button" name="" value="Registrarse" id="btn"></a>
+          <input type="submit" name="" value="Registrarse">
         </div>
       </form>
     </div>

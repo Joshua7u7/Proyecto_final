@@ -42,3 +42,7 @@ Alter table Cuenta add constraint FK_Usuario Foreign Key(id_usuario) references 
 Alter table Documento add constraint FK_Documento Foreign Key(id_usuario) references Usuario (id_usuario) on delete cascade on update cascade;
 
 Alter table Usuario add constraint FK_Departamento Foreign Key(idD) references Departamento (idD) on delete cascade on update cascade;
+
+
+Insert into departamento(idD,nombre_departamento) values
+(2,'Sistemas'),(3,'Redes');
