@@ -1,0 +1,74 @@
+/*General*/
+
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+body
+{
+  background: url("http://informationcommunicationtechnology.com/wp-content/uploads/2018/06/Cool-Wallpapers-Hd-112.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul
+{
+  list-style-type: none;
+  background-color: #1F618D  ;
+  overflow: hidden;
+}
+
+ul li a
+{
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 16px 22px;
+}
+
+nav ul > li
+{
+  float: left;
+}
+
+nav li a:hover:not(.active)
+{
+  background-color: #BFC9CA;
+  color: black;
+}
+
+.active
+{
+  background-color: #922B21;
+  color: white;
+}
+
+nav  li ul
+{
+  display: none;
+  position: absolute;
+  max-width: 140px;
+}
+
+nav li ul li
+{
+  position: relative;
+  max-width: 140px;
+}
+
+nav li:hover>ul
+{
+  display: block;
+}
+
+.Principal
+{
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  overflow-y: scroll;
+}

@@ -1,0 +1,64 @@
+
+body
+{
+  background: url("http://informationcommunicationtechnology.com/wp-content/uploads/2018/06/Cool-Wallpapers-Hd-112.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Bienvenida*/
+
+.Bienvenida
+{
+  background-color: white;
+  width: 800px;
+  height: 350px;
+  margin-left: 25%;
+  margin-top: 10%;
+
+}
+
+.logos
+{
+  display: flex;
+  width: 800px;
+  height: 100px;
+}
+.escom_logo img
+{
+  float: left;
+  width: 20%;
+  height:100%;
+}
+
+.ipn_logo img
+{
+  float: right;
+  width: 90%;
+  height:100%;
+}
+
+.Texto h1
+{
+  opacity: 1;
+  margin-left: 25%;
+}
+
+.Texto p
+{
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: justify;
+  padding-top: 2%;
+}
+
+
+footer {
+   display: flex;
+   background-color: #222;
+   color: white;
+   padding: 15px;
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+ }

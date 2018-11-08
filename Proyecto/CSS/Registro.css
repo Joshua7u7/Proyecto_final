@@ -1,0 +1,78 @@
+.Contenedor_registro
+{
+  background-color: white;
+  width: 450px;
+  height: 500px;
+  margin-left: 5%;
+  margin-top: 0%;
+}
+
+.logos
+{
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+.escom img
+{
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.ipn img
+{
+  float: right;
+  width: 100%;
+  height: 100px;
+}
+
+.registro h1
+{
+  padding-left: 30%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+
+.R_BESCOM
+{
+  font-size: 20px;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+.R_BESCOM input
+{
+  width: 300px;
+  height: 20px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 20px;
+  border-bottom: 0.5px solid;
+}
+
+.Final
+{
+  width: 100%;
+  display: flex;
+  font-size: 15px;
+}
+
+.Final input
+{
+  color: white;
+  background-color: #1F618D;
+  border-bottom: 0px;
+  border-radius: 5px;
+  margin-left: 10%;
+  width: 100px;
+  height: 20px;
+  font-size: 15px;
+}
+
+.Final .tc
+{
+  margin-left: 1%;
+}
