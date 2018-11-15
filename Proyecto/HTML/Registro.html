@@ -31,29 +31,29 @@
 
       <form class="R_BESCOM" action="../Bases de datos/Base_datos.php" name="Formulario" method="POST" autofocus>
         <label for="N_usuario">Nombre</label> <br>
-        <input type="text" name="usuario"  id="N_usuario"> <br><br>
+        <input type="text" name="usuario"  id="N_usuario" required autofocus> <br><br>
 
         <label for="Apellido">Apellido</label><br>
-        <input type="text" name="apellido" value=""><br><br>
+        <input type="text" name="apellido" value="" required><br><br>
 
         <label for="Contrasena">Contraseña</label> <br>
-        <input type="password" name="con_1"  id="Contrasena"> <br><br>
+        <input type="password" name="con_1"  id="Contrasena" required> <br><br>
 
         <label for="Contrasena_2">Confirmar contraseña</label> <br>
-        <input type="password" name="con_2"  id="Contrasena_2"> <br><br>
+        <input type="password" name="con_2"  id="Contrasena_2" required> <br><br>
 
         <label for="fecha">Fecha de nacimiento</label><br>
-        <input type="date" name="fecha" value="" id="fecha"><br><br>
+        <input type="date" name="fecha" value="" id="fecha" required><br><br>
 
         <label for="Departamento">Departamento de pertenencia</label> <br>
-        <select class="" name="dep" id="Departamento">
+        <select class="" name="dep" id="Departamento" required>
           <option value="Basicas">Basicas</option>
           <option value="Sistemas">Sistemas</option>
           <option value="Redes">Redes</option>
         </select> <br><br>
 
         <label for="Tipo">Tipo de usuario</label> <br>
-        <select class="" name="t_u" id="Tipo">
+        <select class="" name="t_u" id="Tipo" required>
           <option value="Docente">Docente</option>
           <option value="Analista">Analista</option>
           <option value="Administrador">Administrador</option>
@@ -61,7 +61,7 @@
 
         <div class="Final">
           Acepto términos y condiciones
-          <input type="checkbox" name="" value="" class="tc">
+          <input type="checkbox" name="" value="" class="tc" required>
           <input type="submit" name="" value="Registrarse" id="btn">
         </div>
       </form>

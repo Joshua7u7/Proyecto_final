@@ -21,12 +21,40 @@ if($_POST)
   $fila_2 = mysqli_fetch_array($resultado_2);
   $idD=$fila_2['idD'];
 
-  mysqli_query($conexion,"Insert into usuario(id_usuario,idD,nombre,apellidos,fecha_nacimiento,tipo_usuario) values
-  ('$id_u','$idD','$nombre','$apellido','$nacimiento','$tipo_usuario')");
+  if($tipo_usuario=="Administrador")
+  {
+    $chequeo=mysqli_query($conexion,"Select * from usuario where tipo_usuario='$tipo_usuario'");
+    $chequeo_2=mysqli_fetch_array($chequeo);
+    if($chequeo_2>0)
+    {
+      ?>
+        <script type="text/javascript">
+          alert("Lo siento, ya existe un administrador registrado");
+          document.location.target="";
+          document.location.href=("../HTML/Registro.html");
+        </script>
+      <?php
+    }
+    else
+    {
+      mysqli_query($conexion,"Insert into usuario(id_usuario,idD,nombre,apellidos,fecha_nacimiento,tipo_usuario) values
+      ('$id_u','$idD','$nombre','$apellido','$nacimiento','$tipo_usuario')");
 
-  $insertar_cuenta="Insert into cuenta(idC,id_usuario,contraseña,nombre_usuario)
-  values('$id_u','$id_u','$contraseña','$nombre')";
-  mysqli_query($conexion,$insertar_cuenta);
+      $insertar_cuenta="Insert into cuenta(idC,id_usuario,contraseña,nombre_usuario)
+      values('$id_u','$id_u','$contraseña','$nombre')";
+      mysqli_query($conexion,$insertar_cuenta);
+    }
+  }
+  else
+  {
+    mysqli_query($conexion,"Insert into usuario(id_usuario,idD,nombre,apellidos,fecha_nacimiento,tipo_usuario) values
+    ('$id_u','$idD','$nombre','$apellido','$nacimiento','$tipo_usuario')");
+
+    $insertar_cuenta="Insert into cuenta(idC,id_usuario,contraseña,nombre_usuario)
+    values('$id_u','$id_u','$contraseña','$nombre')";
+    mysqli_query($conexion,$insertar_cuenta);
+  }
+
 }
 
 ?>
