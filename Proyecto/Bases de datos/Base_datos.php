@@ -40,9 +40,9 @@ if($_POST)
       mysqli_query($conexion,"Insert into usuario(id_usuario,idD,nombre,apellidos,fecha_nacimiento,tipo_usuario) values
       ('$id_u','$idD','$nombre','$apellido','$nacimiento','$tipo_usuario')");
 
-      $insertar_cuenta="Insert into cuenta(idC,id_usuario,contraseña,nombre_usuario)
-      values('$id_u','$id_u','$contraseña','$nombre')";
-      mysqli_query($conexion,$insertar_cuenta);
+      
+      mysqli_query($conexion,"Insert into cuenta(idC,id_usuario,contrasena,nombre_usuario)
+      values('$id_u','$id_u','$contraseña','$nombre')");
     }
   }
   else
@@ -50,12 +50,11 @@ if($_POST)
     mysqli_query($conexion,"Insert into usuario(id_usuario,idD,nombre,apellidos,fecha_nacimiento,tipo_usuario) values
     ('$id_u','$idD','$nombre','$apellido','$nacimiento','$tipo_usuario')");
 
-    $insertar_cuenta="Insert into cuenta(idC,id_usuario,contraseña,nombre_usuario)
-    values('$id_u','$id_u','$contraseña','$nombre')";
-    mysqli_query($conexion,$insertar_cuenta);
+    mysqli_query($conexion,"Insert into cuenta(idC,id_usuario,contrasena,nombre_usuario)values('$id_u','$id_u','$contraseña','$nombre')");
   }
 
 }
+
 
 ?>
 
@@ -102,6 +101,7 @@ if($_POST)
 
             $nombre=$F['nombre'];
             echo "$nombre"."  ";
+            mysqli_close($conexion);
           ?>
           !</h2>
 

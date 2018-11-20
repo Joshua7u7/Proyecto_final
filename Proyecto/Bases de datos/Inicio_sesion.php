@@ -8,7 +8,7 @@ if($_GET)
     $nombre=$_GET['nombre'];
     $contraseña=$_GET['contraseña'];
 
-    $consulta_1="Select nombre_usuario,contraseña from cuenta where nombre_usuario='$nombre' and contraseña='$contraseña'";
+    $consulta_1=" Select nombre_usuario,contrasena from cuenta where nombre_usuario='$nombre' and contrasena='$contraseña'";
     $Resultado=mysqli_query($conexion,$consulta_1);
     $Fila=mysqli_fetch_array($Resultado);
 
@@ -23,7 +23,7 @@ if($_GET)
           {
             <?php
               $consulta_1="select tipo_usuario from usuario,cuenta where
-                           usuario.id_usuario=cuenta.id_usuario and contraseña='$contraseña'
+                           usuario.id_usuario=cuenta.id_usuario and contrasena='$contraseña'
                            and nombre=nombre_usuario and nombre='$nombre'";
               $Resultado=mysqli_query($conexion,$consulta_1);
               $fila=mysqli_fetch_array($Resultado);
@@ -53,4 +53,6 @@ if($_GET)
     else
       echo "Acceso denegado";
 }
+
+mysqli_close($conexion);
 ?>
