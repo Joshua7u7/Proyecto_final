@@ -1,0 +1,76 @@
+/*---Estilos Globales---*/
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: verdana, geneva, serif;
+}
+
+/*---Estilos Tabla---*/
+table{
+    padding: 30px;
+    margin: 30px;
+    width: auto;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+tr:not(.titulo){
+   background: #e7cbc5;
+   border-style: solid;
+}
+
+tr{
+    box-sizing: border-box;
+}
+
+td{
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin: 15px;
+    padding: 20px;
+    border: none;
+}
+
+tr > :first-child{
+    width: 55px; 
+    text-align: center;
+}
+
+td:nth-child(2){
+    width: 600px; 
+}
+
+td:nth-child(3){
+    width: 100px; 
+    text-align: center;
+    font-size: 9px;
+}
+
+td:nth-child(4){
+    width: 100px; 
+    text-align: center;
+    font-size: 10px;
+}
+
+thead{
+    font-size: 20px;
+}
+
+.titulo th{
+    border-collapse: collapse;
+    margin: 20px;
+    padding: 30px;
+}
+
+
