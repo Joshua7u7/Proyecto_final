@@ -10,17 +10,14 @@ function Validar_Registro()
 
     if((Contraseña.length)<8)
     {
+
         alert("Lo siento "+Nombre+" la contraseña es demasiado corta, debe tener al menos 8 caracteres");
+        document.forms.Formulario.action="#";
     }
 
     if(Contraseña!=Contraseña_2)
     {
         alert("Verifique que las contraseñas coincidan");
+        document.forms.Formulario.action="#";
     }
-
-    <?php
-      $Base=new Conexion;
-
-      $Base.Crear_Conexion();
-    ?>
 }

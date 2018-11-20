@@ -43,8 +43,14 @@
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="HTML/Registro.html" target="principal"><span class="glyphicon glyphicon-user"></span>Registrarse</a></li>
-      <li><a href="HTML/Inicio sesion.html" target="principal"><span class="glyphicon glyphicon-log-in"></span>Entrar</a></li>
+      <div class="nav navbar-nav navbar-right" id="Entrar">
+        <li><a href="HTML/Registro.html" target="principal"><span class="glyphicon glyphicon-user"></span>Registrarse</a></li>
+        <li><a href="HTML/Inicio sesion.html" target="principal"><span class="glyphicon glyphicon-log-in"></span>Entrar</a></li>
+      </div>
+      <div class="nav navbar-nav navbar-right" id="Salir">
+        <li><a href="otro/index2.html" target="principal"><span class="glyphicon glyphicon-log-in"></span>Salir</a></li>
+      </div>
+
     </ul>
     </div>
   </nav>
@@ -75,11 +81,9 @@
     </div>
 
     <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>DIV exclusivo para el analista</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
+      <div class="list-group">
+          <a href="Documentos/valoracion.pdf" class="list-group-item disabled" target="principal">Visualizar profesores</a>
+          <a href="Documentos/reglamento.pdf" class="list-group-item disabled"  target="principal">Visualizar empleados</a>
       </div>
     </div>
   </div>
