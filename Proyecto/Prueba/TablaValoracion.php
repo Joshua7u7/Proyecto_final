@@ -6,7 +6,31 @@
     <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 <body>
+
+  <?php
+    try {
+      require_once('includes/funciones/conexion.php');
+      $sql= " SELECT * FROM actividad ";
+      $resultado= $conn->query($sql);
+    } catch (Exception $e) {
+      echo $e->getMessage();
+    }
+  ?>
+
+  <div class="conexion">
+    <?php
+      $actividades = $resultado->fetch_assoc();
+
+      echo "<pre>";
+        var_dump($actividades);
+      echo "</pre>";
+    ?>
+  </div>
+
+  <?php $conn->close(); ?>
+
     <div class="container">
+      <form action="replay.php" method="post" enctype="multipart/form-data">
         <div class="tabla">
             <table>
                 <thead>
@@ -20,13 +44,17 @@
                         <td>I.1</td>
                         <td>ANTIGÜEDAD COMO DOCENTE DE CARRERA DE TIEMPO COMPLETO EN EL IPN.</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
-                        <td>Subir Archivo</td>
+                        <td>
+                              <input type="file" name="I.1" id="archivo"></input>
+                        </td>
                     </tr>
                     <tr>
                         <td>I.2</td>
                         <td>PRESEA JUAN DE DIOS BÁTIZ</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
-                        <td>Subir Archivo</td>
+                        <td>
+                              <input type="file" name="I.2" id="archivo"></input>
+                        </td>
                     </tr>
                     <tr>
                         <td>I.3</td>
@@ -580,7 +608,7 @@
                         <td>Subir Archivo</td>
                     </tr>
                     <tr class="espacio">
-                        
+
                     </tr>
                      <tr>
                         <td>III.16</td>
@@ -705,7 +733,7 @@
                         <td>Subir Archivo</td>
                     </tr>
                     <tr class="espacio">
-                        
+
                     </tr>
                     <tr>
                         <td>III.19</td>
@@ -828,7 +856,7 @@
                         <td>Subir Archivo</td>
                     </tr>
                     <tr class="espacio">
-                        
+
                     </tr>
                     <tr>
                         <td>III.30</td>
@@ -859,7 +887,7 @@
                         <td>Subir Archivo</td>
                     </tr>
                     <tr class="espacio">
-                        
+
                     </tr>
                     <tr>
                         <td>III.32</td>
@@ -912,7 +940,7 @@
                         <td>Subir Archivo</td>
                     </tr>
                     <tr class="espacio">
-                        
+
                     </tr>
                     <tr>
                         <td>III.36</td>
@@ -959,11 +987,9 @@
                 </tbody>
             </table>
         </div>
-        <div class="boton">
-            <input type="button" value="Finalizado">
-        </div>
-        <div class="boton"><input type="button" value="Terminado"></div>
+        <div class="boton"><input type="submit" value="Terminado"></div>
+      </form>
     </div>
-    <script src="JS/scripts.js"></script>
+
 </body>
 </html>

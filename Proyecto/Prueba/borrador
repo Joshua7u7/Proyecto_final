@@ -1,0 +1,12 @@
+<?php
+  try {
+    require('includes/funciones/conexion.php');
+    $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `tipo_arch`, `codigo_arch`) VALUES (NULL, " . "'$path'".", ". "'$tipo'". ", ". "'$id_actividad'".")";
+    $resultado= $conn->query($sql2);
+  } catch (Exception $e) {
+    echo $e->getMessage();
+  }
+  $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `tipo_arch`, `codigo_arch`) VALUES (NULL, " . "'$path'".", ". "'$tipo'". ", ". "'$id_actividad'".")";
+  echo "<h1>".$sql2."</h1>";
+  $conn->close();
+?>
