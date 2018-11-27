@@ -1,0 +1,81 @@
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.1', 'ANTIGÜEDAD COMO DOCENTE DE CARRERA DE TIEMPO COMPLETO EN EL IPN.');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.2', 'LABORATORIO (NMS, NS Y POSGRADO)');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.3', 'CLASE TEÓRICA – PRÁCTICA (NMS, NS Y POSGRADO)');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.4', 'CLASE DE SEMINARIO, ESTANCIA O TRABAJO, IMPARTIDA EN LAS SECCIONES DE POSGRADO DEL I.P .N.');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.5', 'RESULTADO DE LA EVALUACIÓN DEL DOCENTE FRENTE A GRUPO');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.6', 'CURSOS POR EL SISTEMA ABIERTO DE ENSEÑANZA');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.2.1', 'FORMACIÓN DE PERSONAL O DE GRUPOS DE INVESTIGACIÓN (B.E.I.F.I.)');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.2.2', 'ADIESTRAMIENTO TÉCNICO O CURSOS DE CAPACITACIÓN CON RECONOCIMIENTO OFICIAL O REGISTRO');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.2.3', 'CURSOS IMPARTIDOS PARA LA FORMACIÓN O ACTUALIZACIÓN DE PROFESORES CON RECONOCIMIENTO OFICIAL O REGISTRO');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.3.1', 'NIVEL MEDIO SUPERIOR');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.3.2', 'NIVEL LICENCIATURA');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.3.3', 'NIVEL POSGRADO');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.4.1', 'TESIS TRADICIONAL DE NIVEL MEDIO SUPERIOR');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.4.2', 'TESIS TRADICIONAL DE NIVEL SUPERIOR');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.4.3', 'MAESTRÍA');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.4.4', 'DOCTORADO');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.4.5', 'ESPECIALIZACIÓN O DIPLOMADO CON TESINA');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.5', 'COORDINADOR DE SEMINARIOS DE TITULACIÓN EN EL I.P.N.');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.6', 'DIRECTOR DE TESINAS PARA SEMINARIOS DE TITULACIÓN EN EL I.P.N.');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.7', 'SINODAL DE EXAMEN PROFESIONAL (N.M.S. Y N.S.) EN EL I.P.N.');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.8', 'SINODAL EN SISTEMAS DE TITULACIÓN POR SEMINARIO O EXAMEN GENERAL DE CONOCIMIENTOS EN EL I.P.N.');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.9', 'SINODAL EN EXAMEN PREDOCTORAL O DE GRADO EN EL I.P.N.');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.1', 'DIRECTOR DE ESCUELA, CENTRO, UNIDAD O EQUIVALENTE');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.2', 'SUBDIRECTOR DE ESCUELA O JEFE DE LA SECCIÓN DE GRADUADOS');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.3', 'JEFE DE DEPARTAMENTO');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.4', 'JEFE DE CARRERA O COORDINADOR DE POSGRADO');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.5', 'SUBJEFE DE DEPARTAMENTO');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.6', 'JEFE DE SECCIÓN');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.7', 'JEFE DE LABORATORIO O TALLER');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.8', 'SUBJEFE DE CARRERA O JEFE DE OFICINA');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.9', 'JEFE DE SERVICIO SOCIAL DE LA ESCUELA');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.10', 'JEFE DE SERVICIO SOCIAL DE CARRERA O ESPECIALIDAD');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.11', 'JEFE DE SERVICIO SOCIAL EN EL DEPARTAMENTO O SUBJEFE DE LABORATORIO O TALLER');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.12', 'PRESIDENTE O JEFE DE ACADEMIA DE ASIGNATURAS AFINES');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.10.13', 'PRESIDENTE DE ACADEMIA DE ASIGNATURA O MÓDULO O COORDINADOR DE ACADEMIA');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.11.1', 'TÉCNICO A NIVEL MEDIO SUPERIOR');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.11.2', 'LICENCIATURA');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.12.1', 'ESPECIALIZACIÓN CON DIPLOMA Y TESINA');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.12.2', 'ESPECIALIZACIÓN CON DIPLOMA');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.12.3', 'MAESTRÍA CON GRADO');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.12.4', 'DOCTORADO CON GRADO');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.12.5', 'EXAMEN PREDOCTORAL');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.12.6', 'ESTUDIOS POSDOCTORALES TERMINADOS');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.12.7', 'ESTANCIAS DE INVESTIGACIÓN');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.13.1', 'CON EXAMEN');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.13.2', 'SIN EXAMEN');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.14.1', 'COORDINACIÓN EN LA ELABORACIÓN DE UN PLAN DE ESTUDIOS DE LA CARRERA O POSGRADO');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.14.2', 'PARTICIPACIÓN EN LA ELABORACIÓN O ACTUALIZACIÓN DE UN PLAN DE ESTUDIOS');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.14.3', 'COORDINACIÓN EN LA ELABORACIÓN O ACTUALIZACIÓN DE UN PROGRAMA DE ESTUDIOS');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.14.4', 'PARTICIPACIÓN EN LA ELABORACIÓN O ACTUALIZACIÓN DE UN PROGRAMA DE ESTUDIOS');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.15.1', 'ASESORÍA DE ALUMNOS EN SERVICIO SOCIAL (SÓLO EN PROYECTOS ACADÉMICOS)');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.15.2', 'ASESORÍA DE ESTUDIANTES PARTICIPANTES EN OLIMPIADAS DE LAS CIENCIAS O CONCURSOS DE SOFTWARE A NIVEL NACIONAL O CONCURSO PIERRE-FERMAT');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.15.3', 'COORDINACIÓN DE PROYECTOS QUE HAYAN CONDUCIDO A LA CREACIÓN DE EMPRESAS DE BASE TECNOLÓGICA (EMPRENDEDORES JUVENILES)');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.16.1', 'COORDINACIÓN DEL PROGRAMA INSTITUCIONAL DE TUTORÍAS');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.16.2', 'TUTOR CON ATENCIÓN GRUPAL A ALUMNOS');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.16.3', 'TUTOR CON ATENCIÓN INDIVIDUAL A ALUMNOS');
+
+
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.17', 'COORDINADOR DE DIPLOMADO EN FORMACIÓN Y ACTUALIZACIÓN DOCENTE PARA UN NUEVO MODELO EDUCATIVO');
