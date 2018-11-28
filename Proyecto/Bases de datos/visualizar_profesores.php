@@ -16,6 +16,14 @@ $conexion=mysqli_connect('localhost','root','','becas',3306);
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Visualizar profesores</title>
+
+  <style type="text/css">
+    input
+    {
+      background-color: white;
+      border: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -34,16 +42,19 @@ $conexion=mysqli_connect('localhost','root','','becas',3306);
    $result=mysqli_query($conexion,"select nombre,id_usuario,nombre,apellidos,nombre_departamento
    from usuario,departamento where tipo_usuario='Docente' and usuario.idD=departamento.idD");
 
+
    while($row=mysqli_fetch_array($result))
    {
      ?>
+     
       <tr>
-        <td><?php echo $row['id_usuario']?></td>
-        <td><?php echo $row['nombre']?></td>
-        <td><?php echo $row['apellidos']?></td>
+        <td> <input type="text" name="ID"  value="<?php echo $row['id_usuario']?>" disabled> </td>
+        <td><input type="text" name="NOM"  value="<?php echo $row['nombre']?>" disabled></td>
+        <td><input type="text" name="AP"  value="<?php echo $row['apellidos']?>" disabled></td>
         <td><?php echo $row['nombre_departamento']?></td>
-        <td> <a href="#">Visualizar documentos</a></td>
+        <td> <a href="ver_docs.php?nombre=<?php echo $row['nombre']?>&id=<?php echo $row['id_usuario']?>&apellido=<?php echo $row['apellidos']?>">Visualizar documentos</a> </td>
       </tr>
+      
     </tbody>
 
  <?php

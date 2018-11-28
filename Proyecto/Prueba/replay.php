@@ -12,7 +12,7 @@
         </*?php echo $nombre ?>
       </pre>
       <?php
-        $carpeta = 'Archivos/';
+        $carpeta = '../Documentos_Entregados/';
         for($i=1 ; $i<7 ; $i++){
           $codigo= 'I_' . $i;
           $nombre = $_FILES[$codigo]['name'];
@@ -33,6 +33,16 @@
           }
         }
       ?>
+
+      <script type="text/javascript">
+        window.onload=cargar;
+
+        function cargar()
+        {
+           window.open("../HTML/Exito.html","_self");
+        }
+
+      </script>
     </div>
   </body>
 </html>

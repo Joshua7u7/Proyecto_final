@@ -1,6 +1,6 @@
-INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'I.1', 'ANTIGÜEDAD COMO DOCENTE DE CARRERA DE TIEMPO COMPLETO EN EL IPN.');
-INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'I.2', 'PRESEA JUAN DE DIOS BÁTIZ');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'I.1', 'ANTIGUEDAD COMO DOCENTE DE CARRERA DE TIEMPO COMPLETO EN EL IPN.');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'I.2', 'PRESEA JUAN DE DIOS BATIZ');
 INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'I.3', 'MEDALLA IGNACIO MANUEL ALTAMIRANO');
-INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'I.4', 'PRESEA CARLOS VALLEJO MÁRQUEZ');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'I.4', 'PRESEA CARLOS VALLEJO MAARQUEZ');
 INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'I.5', 'DIPLOMA DE MAESTRO DECANO');
-INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'I.6', 'PRESEA RAFAEL RAMÍREZ');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'I.6', 'PRESEA RAFAEL RAMIREZ');

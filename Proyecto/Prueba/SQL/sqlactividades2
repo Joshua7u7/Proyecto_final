@@ -1,9 +1,9 @@
-INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.1', 'ANTIGÜEDAD COMO DOCENTE DE CARRERA DE TIEMPO COMPLETO EN EL IPN.');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.1', 'ANTIGUUEDAD COMO DOCENTE DE CARRERA DE TIEMPO COMPLETO EN EL IPN.');
 INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.2', 'LABORATORIO (NMS, NS Y POSGRADO)');
-INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.3', 'CLASE TEÓRICA – PRÁCTICA (NMS, NS Y POSGRADO)');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.3', 'CLASE TEORICA – PRACTICA (NMS, NS Y POSGRADO)');
 INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.4', 'CLASE DE SEMINARIO, ESTANCIA O TRABAJO, IMPARTIDA EN LAS SECCIONES DE POSGRADO DEL I.P .N.');
-INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.5', 'RESULTADO DE LA EVALUACIÓN DEL DOCENTE FRENTE A GRUPO');
-INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.6', 'CURSOS POR EL SISTEMA ABIERTO DE ENSEÑANZA');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.5', 'RESULTADO DE LA EVALUACION DEL DOCENTE FRENTE A GRUPO');
+INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.1.6', 'CURSOS POR EL SISTEMA ABIERTO DE ENSENANZA');
 
 
 INSERT INTO `actividad` (`id_act`, `codigo_act`, `nombre_act`) VALUES (NULL, 'II.2.1', 'FORMACIÓN DE PERSONAL O DE GRUPOS DE INVESTIGACIÓN (B.E.I.F.I.)');

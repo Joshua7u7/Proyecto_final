@@ -9,6 +9,11 @@ if($_GET)
     $contraseña=$_GET['contraseña'];
 
     $consulta_1=" Select nombre_usuario,contrasena from cuenta where nombre_usuario='$nombre' and contrasena='$contraseña'";
+
+    $archivo=fopen("Registro/inicio.txt", "w");
+    fwrite($archivo, $nombre);
+    fwrite($archivo,"\n".$contraseña);
+    fclose($archivo);
     $Resultado=mysqli_query($conexion,$consulta_1);
     $Fila=mysqli_fetch_array($Resultado);
 

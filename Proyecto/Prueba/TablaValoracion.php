@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Subir Archivos</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
+   <!-- <link rel="stylesheet" href="CSS/estilos.css">-->
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 </head>
 <body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link disabled" href="#" >Navegar en la tabla</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#ac_1">Premanencia en actividades de docencia</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#ac_2">Calidad de desempeño en la docencia</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="#ac_3">Dedicacion a la docencia</a>
+    </li>
+  </ul>
+</nav>
 
   <?php
     try {
@@ -21,19 +45,19 @@
     <?php
       $actividades = $resultado->fetch_assoc();
 
-      echo "<pre>";
+     /* echo "<pre>";
         var_dump($actividades);
-      echo "</pre>";
+      echo "</pre>";*/
     ?>
   </div>
 
   <?php $conn->close(); ?>
 
-    <div class="container">
+    <div class="container-flid ">
       <form action="replay.php" method="post" enctype="multipart/form-data">
         <div class="tabla">
-            <table>
-                <thead>
+            <table class="table">
+                <thead class="thead-dark">
                     <tr class="titulo">
                         <th>I.</th>
                         <th colspan="3">PERMANENCIA EN LAS ACTIVIDADES DE DOCENCIA</th>
@@ -83,9 +107,10 @@
                 </tbody>
             </table>
         </div>
+        <a name="ac_2"></a>
         <div class="tabla">
-            <table>
-                <thead>
+            <table class="table">
+                <thead class="thead-dark">
                     <tr class="titulo">
                         <th>II.</th>
                         <th colspan="3">CALIDAD EN EL DESEMPEÑO DE LA DOCENCIA</th>
@@ -485,9 +510,10 @@
                 </tbody>
             </table>
         </div>
+        <a name="ac_3"></a>
         <div class="tabla">
-            <table>
-                <thead>
+            <table class="table">
+                <thead class="thead-dark">
                     <tr class="titulo">
                         <th>III.</th>
                         <th colspan="3">DEDICACIÓN A LA DOCENCIA</th>
