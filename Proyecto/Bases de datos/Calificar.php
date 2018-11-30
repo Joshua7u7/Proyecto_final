@@ -26,6 +26,88 @@ if($_POST)
 		$posicion+=1;
 	}
 
+$consulta_pad="select SUM(valor_obtenido) from actividad,archivo where id_act>=1 and id_act<7 and id_act=codigo_arch and id_usuario='$id'";
+$consulta_cdd="select SUM(valor_obtenido) from actividad,archivo where id_act>=7 and id_act<64 and id_act=codigo_arch and id_usuario='$id'";
+$consulta_dd="select SUM(valor_obtenido) from actividad,archivo where id_act>=64 and id_act<137 and id_act=codigo_arch and id_usuario='$id'";
+
+$res=mysqli_query($conexion,$consulta_pad);
+$PAD_r=mysqli_fetch_array($res);
+
+if($PAD_r['SUM(valor_obtenido)']!=NULL)
+{
+	$PAD=$PAD_r['SUM(valor_obtenido)'];	
+}
+else
+{
+	$PAD=0;
+}
+
+
+$res=mysqli_query($conexion,$consulta_cdd);
+$PAD_r=mysqli_fetch_array($res);
+
+if($PAD_r['SUM(valor_obtenido)']!=NULL)
+{
+	$CDD=$PAD_r['SUM(valor_obtenido)'];	
+}
+else
+{
+	$CDD=0;
+}
+
+$res=mysqli_query($conexion,$consulta_dd);
+$PAD_r=mysqli_fetch_array($res);
+
+if($PAD_r['SUM(valor_obtenido)']!=NULL)
+{
+	$DD=$PAD_r['SUM(valor_obtenido)'];	
+}
+else
+{
+	$DD=0;
+}
+
+$puntaje_final=0.15*$PAD+0.6*$CDD+0.25*$DD;
+
+
+if($puntaje_final>=0 and $puntaje_final<=390)
+{
+	$nivel=1;
+}
+
+if($puntaje_final>390 and $puntaje_final<=600)
+{
+	$nivel=2;
+}
+
+if($puntaje_final>600 and $puntaje_final<=780)
+{
+	$nivel=3;
+}
+
+if($puntaje_final>780 and $puntaje_final<=1040)
+{
+	$nivel=4;
+}
+
+if($puntaje_final>1040 and $puntaje_final<=1250)
+{
+	$nivel=5;
+}
+
+if($puntaje_final>1250 and $puntaje_final<=1406)
+{
+	$nivel=6;
+}
+
+if($puntaje_final>1406 and $puntaje_final<=1800)
+{
+	$nivel=7;
+}
+
+$Consulta_final="update estado set puntaje='$puntaje_final', nivel_beca='$nivel' where id_usuario='$id'";
+
+mysqli_query($conexion,$Consulta_final);
 
 
 }	
