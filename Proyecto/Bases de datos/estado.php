@@ -93,14 +93,18 @@ $puntaje=$fila['puntaje'];
 		</tbody>
 
 		<?php
-		$Consulta="select * from archivo where id_usuario='$id_u'";
+		$Consulta="select * from archivo a,actividad ac where a.id_usuario='$id_u' and a.codigo_arch=ac.id_act";
 		$result=mysqli_query($conexion,$Consulta);
 		while($fila=mysqli_fetch_array($result))
 		{
 			?>
 			<tr>
-				<td><?php echo $fila['codigo_arch'] ?></td>
-				<td><?php echo $fila['nombre_arch'] ?></td>
+				<td><?php echo $fila['codigo_act'] ?></td>
+				<td>
+					<?php 
+					echo $fila['nombre_arch']
+					?>
+				</td>
 			</tr>
 
 			<?php
