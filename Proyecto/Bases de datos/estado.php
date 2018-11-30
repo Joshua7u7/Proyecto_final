@@ -102,7 +102,34 @@ $puntaje=$fila['puntaje'];
 				<td><?php echo $fila['codigo_act'] ?></td>
 				<td>
 					<?php 
-					echo $fila['nombre_arch']
+					//echo $fila['nombre_arch']
+					$var=$fila['nombre_arch'];
+					$counter=0;
+					$contador_2=0;
+					while($counter<strlen($var))
+					{
+						if($var[$counter]=='/')
+						{
+							$contador_2++;
+						}
+						$counter++;
+					}
+					$contador_3=0;
+					$counter=0;
+					while($counter<strlen($var))
+					{
+						if($contador_3==$contador_2)
+						{
+							echo $var[$counter];
+						}
+						
+						if($var[$counter]=='/')
+						{
+							$contador_3++;
+						}
+						
+						$counter++;
+					} 
 					?>
 				</td>
 			</tr>

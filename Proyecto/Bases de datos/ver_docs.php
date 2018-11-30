@@ -56,7 +56,41 @@ if($_GET)
 				?>
 				<tr>
 				<td><?php echo $fila['codigo_act']?></td>
-				<td> <a href="<?php echo $fila['nombre_arch'] ?>"><?php echo $fila['nombre_arch'] ?></a></td>
+				<td> <a href="<?php echo $fila['nombre_arch'] ?>">
+					<!--<?php echo $fila['nombre_arch'] ?>-->
+					<?php 
+					//echo $fila['nombre_arch']
+					$var=$fila['nombre_arch'];
+					$counter=0;
+					$contador_2=0;
+					while($counter<strlen($var))
+					{
+						if($var[$counter]=='/')
+						{
+							$contador_2++;
+						}
+						$counter++;
+					}
+					$contador_3=0;
+					$counter=0;
+					$elchido="";
+					while($counter<strlen($var))
+					{
+						if($contador_3==$contador_2)
+						{
+							$elchido=$elchido.$var[$counter];
+						}
+						
+						if($var[$counter]=='/')
+						{
+							$contador_3++;
+						}
+						
+						$counter++;
+					} 
+					?>
+						<input type="" name="" value="<?php echo $elchido ?>" disabled>
+					</a></td>
 				<td></td>
 				<td> <?php echo $fila['valor']?> </td>
 				<td> <input class="form-control"  type="text" name="puntaje[]" placeholder="Puntaje"></td>

@@ -13,6 +13,7 @@
       </pre>
       <?php
         $carpeta = '../Documentos_Entregados/';
+        
         for($i=1 ; $i<7 ; $i++){
           $codigo= 'I_' . $i;
           $nombre = $_FILES[$codigo]['name'];
