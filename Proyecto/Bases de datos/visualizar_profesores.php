@@ -39,8 +39,8 @@ $conexion=mysqli_connect('localhost','root','','becas',3306);
     </thead>
     <tbody>
       <?php
-   $result=mysqli_query($conexion,"select nombre,id_usuario,nombre,apellidos,nombre_departamento
-   from usuario,departamento where tipo_usuario='Docente' and usuario.idD=departamento.idD");
+   $result=mysqli_query($conexion,"select nombre,usuario.id_usuario,apellidos,nombre_departamento
+   from usuario,departamento,estado where tipo_usuario='Docente' and usuario.idD=departamento.idD and usuario.id_usuario=estado.id_usuario and estado.revision=1");
 
 
    while($row=mysqli_fetch_array($result))
