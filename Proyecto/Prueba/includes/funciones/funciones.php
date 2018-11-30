@@ -41,16 +41,16 @@ $query=mysqli_query($conn,"Select id_usuario from cuenta where contrasena='$cont
 $fila=mysqli_fetch_array($query);
 
 $iid=$fila['id_usuario'];
-
+$obs=" ";
 $conn->close();
     try {
       require('includes/funciones/conexion.php');
-      $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`) VALUES (NULL, " . "'$path'".", '$iid' , ". "'$id_actividad'".")";
+      $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`,`observacion`,`valor_obtenido`) VALUES (NULL, " . "'$path'".", '$iid' , ". "'$id_actividad'".",'$obs',0)";
       $resultado= $conn->query($sql2);
     } catch (Exception $e) {
       echo $e->getMessage();
     }
-    $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`) VALUES (NULL, " . "'$path'".",'$iid', ". "'$id_actividad'".")";
+    $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`,`observacion`,`valor_obtenido`) VALUES (NULL, " . "'$path'".",'$iid', ". "'$id_actividad'".",'$obs',0)";
     echo "<h1>".$sql2."</h1>";
     $conn->close();
 

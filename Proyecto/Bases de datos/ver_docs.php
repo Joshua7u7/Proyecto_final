@@ -10,7 +10,7 @@ if($_GET)
 	$apellido=$_GET['apellido'];
 }
 
-	$Consulta="select * from archivo where id_usuario='$id'";
+	$Consulta="select * from actividad a ,archivo ar ,usuario u where codigo_arch=id_act and  ar.id_usuario=u.id_usuario and u.id_usuario='$id'";
 	$result=mysqli_query($conexion,$Consulta);
 
 ?>
@@ -26,21 +26,47 @@ if($_GET)
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <style type="text/css">
+    input
+    {
+      background-color:#e9ecef;
+      border: none;
+    }
+  </style>
+
 </head>
 <body>
 
+<form action="Calificar.php?Id=<?php echo $id?>" method="post">
 	<table class="table">
 		<thead class="thead-light">
-			<th colspan="2">Documentos entregados por <?php echo $nombre . "  " . $apellido?>
+			<th>Código</th>
+			<th colspan="2">
+				Documentos entregados por <?php echo $nombre . "  " . $apellido?>
 			</th>
+			<th> <input type="text" name="" value="Puntaje a obtener" disabled></th>
+			<th><input type="text" name="" value="Puntaje obtenido" disabled></th></th>
+			<th>Observaciones</th>
 		<tbody>
 			<?php
 			while($fila=mysqli_fetch_array($result))
 			{
 				?>
 				<tr>
+				<td><?php echo $fila['codigo_act']?></td>
 				<td> <a href="<?php echo $fila['nombre_arch'] ?>"><?php echo $fila['nombre_arch'] ?></a></td>
-				<td> <input class="form-control"  type="text" name="" placeholder="Puntaje"></td>
+				<td></td>
+				<td> <?php echo $fila['valor']?> </td>
+				<td> <input class="form-control"  type="text" name="puntaje[]" placeholder="Puntaje"></td>
+				<td>
+					<select name="obs[]">
+						<option value="Ninguna">Ninguna</option>
+          				<option value="Observacion 1">Observacion 1</option>
+          				<option value="Observacion 2">Observacion 2</option>
+					</select>
+				</td>
 				</tr>
 				<?php
 			}
@@ -49,5 +75,7 @@ if($_GET)
 		</tbody>
 		</thead>
 	</table>
+	<input type="submit" name="" value="Calificar" class="form-control">
+	</form>
 </body>
 </html>

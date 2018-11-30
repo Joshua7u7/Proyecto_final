@@ -52,8 +52,8 @@ if($_POST)
 
     mysqli_query($conexion,"Insert into cuenta(idC,id_usuario,contrasena,nombre_usuario)values('$id_u','$id_u','$contraseña','$nombre')");
   }
-    mysqli_query($conexion,"Insert into estado(id_usuario,id_estado,nivel_beca,puntaje)
-      values ('$id_u,','$id_u',0,0)");
+    mysqli_query($conexion,"Insert into estado(id_usuario,id_estado,nivel_beca,puntaje,revision)
+      values ('$id_u,','$id_u',0,0,0)");
 }
   
 
