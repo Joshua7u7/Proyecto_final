@@ -69,7 +69,7 @@
                         <td>ANTIGÜEDAD COMO DOCENTE DE CARRERA DE TIEMPO COMPLETO EN EL IPN.</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="I.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -77,7 +77,7 @@
                         <td>PRESEA JUAN DE DIOS BÁTIZ</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="I.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -85,7 +85,7 @@
                         <td>MEDALLA IGNACIO MANUEL ALTAMIRANO</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="I.3" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -93,7 +93,7 @@
                         <td>PRESEA CARLOS VALLEJO MÁRQUEZ</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="I.4" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -101,7 +101,7 @@
                         <td>DIPLOMA DE MAESTRO DECANO</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="I.5" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr class="ultimo">
@@ -109,7 +109,7 @@
                         <td>PRESEA RAFAEL RAMÍREZ</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="I.6" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                 </tbody>
@@ -134,7 +134,7 @@
                         <td>ANTIGÜEDAD COMO DOCENTE DE CARRERA DE TIEMPO COMPLETO EN EL IPN.</td>
                         <td>1 ARCHIVO POR CADA SEMESTRE</td>
                         <td>
-                              <input type="file" name="II.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -142,7 +142,7 @@
                         <td>LABORATORIO (NMS, NS Y POSGRADO)</td>
                         <td>1 ARCHIVO POR CADA SEMESTRE</td>
                         <td>
-                              <input type="file" name="II.1.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -150,7 +150,7 @@
                         <td>CLASE TEÓRICA – PRÁCTICA (NMS, NS Y POSGRADO)</td>
                         <td>1 ARCHIVO POR CADA SEMESTRE</td>
                         <td>
-                              <input type="file" name="II.1.3" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -158,7 +158,7 @@
                         <td>CLASE DE SEMINARIO, ESTANCIA O TRABAJO, IMPARTIDA EN LAS SECCIONES DE POSGRADO DEL I.P .N.</td>
                         <td>1 ARCHIVO POR CADA SEMESTRE</td>
                         <td>
-                              <input type="file" name="II.1.4" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -166,7 +166,7 @@
                         <td>RESULTADO DE LA EVALUACIÓN DEL DOCENTE FRENTE A GRUPO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.1.5" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -174,7 +174,7 @@
                         <td>CURSOS POR EL SISTEMA ABIERTO DE ENSEÑANZA</td>
                         <td>1 ARCHIVO POR CADA SEMESTRE</td>
                         <td>
-                              <input type="file" name="II.1.6" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -186,7 +186,7 @@
                         <td>FORMACIÓN DE PERSONAL O DE GRUPOS DE INVESTIGACIÓN (B.E.I.F.I.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.2.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -194,7 +194,7 @@
                         <td>ADIESTRAMIENTO TÉCNICO O CURSOS DE CAPACITACIÓN CON RECONOCIMIENTO OFICIAL O REGISTRO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.2.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -202,7 +202,7 @@
                         <td>CURSOS IMPARTIDOS PARA LA FORMACIÓN O ACTUALIZACIÓN DE PROFESORES CON RECONOCIMIENTO OFICIAL O REGISTRO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.2.3" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -214,7 +214,7 @@
                         <td>NIVEL MEDIO SUPERIOR</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.3.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -222,7 +222,7 @@
                         <td>NIVEL LICENCIATURA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.3.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -230,7 +230,7 @@
                         <td>NIVEL POSGRADO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.3.3" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -242,7 +242,7 @@
                         <td>TESIS TRADICIONAL DE NIVEL MEDIO SUPERIOR</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.4.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -250,7 +250,7 @@
                         <td>TESIS TRADICIONAL DE NIVEL SUPERIOR</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.4.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -258,7 +258,7 @@
                         <td>MAESTRÍA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.4.3" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -266,7 +266,7 @@
                         <td>DOCTORADO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.4.4" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -274,7 +274,7 @@
                         <td>ESPECIALIZACIÓN O DIPLOMADO CON TESINA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.4.5" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr class="espacio">    <!--Fila en blanco dentro de la tabla-->
@@ -284,7 +284,7 @@
                         <td>COORDINADOR DE SEMINARIOS DE TITULACIÓN EN EL I.P.N.</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.5" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -292,7 +292,7 @@
                         <td>DIRECTOR DE TESINAS PARA SEMINARIOS DE TITULACIÓN EN EL I.P.N.</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.6" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -300,7 +300,7 @@
                         <td>SINODAL DE EXAMEN PROFESIONAL (N.M.S. Y N.S.) EN EL I.P.N.</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.7" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -308,7 +308,7 @@
                         <td>SINODAL EN SISTEMAS DE TITULACIÓN POR SEMINARIO O EXAMEN GENERAL DE CONOCIMIENTOS EN EL I.P.N.</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.8" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -316,7 +316,7 @@
                         <td>SINODAL EN EXAMEN PREDOCTORAL O DE GRADO EN EL I.P.N.</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.9" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -328,7 +328,7 @@
                         <td>DIRECTOR DE ESCUELA, CENTRO, UNIDAD O EQUIVALENTE</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -336,7 +336,7 @@
                         <td>SUBDIRECTOR DE ESCUELA O JEFE DE LA SECCIÓN DE GRADUADOS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -344,7 +344,7 @@
                         <td>JEFE DE DEPARTAMENTO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.3" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -352,7 +352,7 @@
                         <td>JEFE DE CARRERA O COORDINADOR DE POSGRADO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.4" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -360,7 +360,7 @@
                         <td>SUBJEFE DE DEPARTAMENTO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.5" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -368,7 +368,7 @@
                         <td>JEFE DE SECCIÓN</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.6" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -376,7 +376,7 @@
                         <td>JEFE DE LABORATORIO O TALLER</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.7" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -384,7 +384,7 @@
                         <td>SUBJEFE DE CARRERA O JEFE DE OFICINA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.8" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -392,7 +392,7 @@
                         <td>JEFE DE SERVICIO SOCIAL DE LA ESCUELA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.9" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -400,7 +400,7 @@
                         <td>JEFE DE SERVICIO SOCIAL DE CARRERA O ESPECIALIDAD</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.10" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -408,7 +408,7 @@
                         <td>JEFE DE SERVICIO SOCIAL EN EL DEPARTAMENTO O SUBJEFE DE LABORATORIO O TALLER</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.11" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -416,7 +416,7 @@
                         <td>PRESIDENTE O JEFE DE ACADEMIA DE ASIGNATURAS AFINES</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.12" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -424,7 +424,7 @@
                         <td>PRESIDENTE DE ACADEMIA DE ASIGNATURA O MÓDULO O COORDINADOR DE ACADEMIA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.10.13" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -436,7 +436,7 @@
                         <td>TÉCNICO A NIVEL MEDIO SUPERIOR</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.11.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -444,7 +444,7 @@
                         <td>LICENCIATURA</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.11.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -456,7 +456,7 @@
                         <td>ESPECIALIZACIÓN CON DIPLOMA Y TESINA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO Y ENTREGAR TESINA</td>
                         <td>
-                              <input type="file" name="II.12.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -464,7 +464,7 @@
                         <td>ESPECIALIZACIÓN CON DIPLOMA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.12.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -472,7 +472,7 @@
                         <td>MAESTRÍA CON GRADO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.12.3" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -480,7 +480,7 @@
                         <td>DOCTORADO CON GRADO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.12.4" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -488,7 +488,7 @@
                         <td>EXAMEN PREDOCTORAL</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.12.5" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -496,7 +496,7 @@
                         <td>ESTUDIOS POSDOCTORALES TERMINADOS</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.12.6" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -504,7 +504,7 @@
                         <td>ESTANCIAS DE INVESTIGACIÓN</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.12.7" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -516,7 +516,7 @@
                         <td>CON EXAMEN</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.13.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -524,7 +524,7 @@
                         <td>SIN EXAMEN</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.13.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -536,7 +536,7 @@
                         <td>COORDINACIÓN EN LA ELABORACIÓN DE UN PLAN DE ESTUDIOS DE LA CARRERA O POSGRADO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.14.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -544,7 +544,7 @@
                         <td>PARTICIPACIÓN EN LA ELABORACIÓN O ACTUALIZACIÓN DE UN PLAN DE ESTUDIOS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.14.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -552,7 +552,7 @@
                         <td>COORDINACIÓN EN LA ELABORACIÓN O ACTUALIZACIÓN DE UN PROGRAMA DE ESTUDIOS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.14.3" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -560,7 +560,7 @@
                         <td>PARTICIPACIÓN EN LA ELABORACIÓN O ACTUALIZACIÓN DE UN PROGRAMA DE ESTUDIOS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.14.4" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -572,7 +572,7 @@
                         <td>ASESORÍA DE ALUMNOS EN SERVICIO SOCIAL (SÓLO EN PROYECTOS ACADÉMICOS)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.15.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -580,7 +580,7 @@
                         <td>ASESORÍA DE ESTUDIANTES PARTICIPANTES EN OLIMPIADAS DE LAS CIENCIAS O CONCURSOS DE SOFTWARE A NIVEL NACIONAL O CONCURSO PIERRE-FERMAT</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.15.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -588,7 +588,7 @@
                         <td>COORDINACIÓN DE PROYECTOS QUE HAYAN CONDUCIDO A LA CREACIÓN DE EMPRESAS DE BASE TECNOLÓGICA (EMPRENDEDORES JUVENILES)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.15.3" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -600,7 +600,7 @@
                         <td>COORDINACIÓN DEL PROGRAMA INSTITUCIONAL DE TUTORÍAS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.16.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -608,7 +608,7 @@
                         <td>TUTOR CON ATENCIÓN GRUPAL A ALUMNOS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.16.2" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -616,7 +616,7 @@
                         <td>TUTOR CON ATENCIÓN INDIVIDUAL A ALUMNOS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                              <input type="file" name="II.16.3" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr class="espacio">    <!--Fila en blanco dentro de la tabla-->
@@ -626,7 +626,7 @@
                         <td>COORDINADOR DE DIPLOMADO EN FORMACIÓN Y ACTUALIZACIÓN DOCENTE PARA UN NUEVO MODELO EDUCATIVO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                              <input type="file" name="II.17" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>>
                         </td>
                     </tr>
                 </tbody>
@@ -647,7 +647,7 @@
                         <td>APUNTES, CUADERNOS Y PROBLEMARIOS DEL CURSO COMPLETO, AVALADOS POR LA ACADEMIA (PUBLICADOS POR EL I.P.N. U OTRAS EDITORIALES)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO Y <b>ENTREGAR EJEMPLAR</b></td>
                         <td>
-                              <input type="file" name="III.1" id="archivo"></input>
+                              <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -655,7 +655,7 @@
                         <td>MANUAL DE PRÁCTICAS DE LABORATORIO, AVALADAS POR LA ACADEMIA Y QUE CUBRAN UN CURSO COMPLETO (PUBLICADAS POR EL I.P.N. U OTRAS EDITORIALES)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO Y <b>ENTREGAR EJEMPLAR</b></td>
                         <td>
-                            <input type="file" name="III.2" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -663,7 +663,7 @@
                         <td>ACTUALIZACIÓN DE APUNTES, MANUALES Y PROBLEMARIOS (PUBLICADOS POR EL I.P.N. U OTRAS EDITORIALES)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO Y <b>ENTREGAR EJEMPLAR</b></td>
                         <td>
-                            <input type="file" name="III.3" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -671,7 +671,7 @@
                         <td>BANCO DE REACTIVOS SOLICITADOS POR LA D.E.S. O LA D.E.M.S. QUE CUBRAN EL PROGRAMA COMPLETO DE LA ASIGNATURA CON 100 REACTIVOS COMO MÍNIMO E INÉDITOS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                            <input type="file" name="III.4" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -679,7 +679,7 @@
                         <td>COLECCIÓN DE DIAPOSITIVAS O DIAPORAMAS QUE CUBRAN EL CURSO COMPLETO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO Y <b>ENTREGAR MATERIAL</b></td>
                         <td>
-                            <input type="file" name="III.5" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -687,7 +687,7 @@
                         <td>MATERIAL DIDÁCTICO PARA LAS COMUNIDADES COMO PARTE DE PROYECTOS INSTITUCIONALES</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO Y <b>ENTREGAR MATERIAL</b></td>
                         <td>
-                            <input type="file" name="III.6" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -695,7 +695,7 @@
                         <td>PARTICIPACIÓN EN PROGRAMAS DE RADIO, TELEVISIÓN O EN VIDEO CASSETTES, COMO GUIONISTA, CONDUCTOR O ASESOR ACADÉMICO O CIENTÍFICO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO Y <b>ENTREGAR MATERIAL</b></td>
                         <td>
-                            <input type="file" name="III.7" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -703,7 +703,7 @@
                         <td>PROTOTIPOS DE APOYO DIDÁCTICO AVALADOS POR LA ACADEMIA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                            <input type="file" name="III.8" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -711,7 +711,7 @@
                         <td>TRADUCCIONES PUBLICADAS DE LIBROS, ARTÍCULOS Y TRABAJOS TÉCNICOS (CON CRÉDITO AL I.P.N.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.9" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -719,7 +719,7 @@
                         <td>LIBROS ACADÉMICOS PUBLICADOS (CON NÚMERO DE EDICIÓN, NÚMERO DE IDENTIFICACIÓN INTERNACIONAL (ISBN) Y CON CRÉDITO AL I.P.N.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO Y <b>ENTREGAR LA OBRA</b></td>
                         <td>
-                            <input type="file" name="III.10" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -727,7 +727,7 @@
                         <td>POLILIBRO ACADÉMICO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.10.1" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -736,7 +736,7 @@
                         (CON NÚMERO DE EDICIÓN, NÚMERO DE IDENTIFICACIÓN INTERNACIONAL (ISBN) Y CON CRÉDITO AL I.P.N.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO Y <b>ENTREGAR LA OBRA</b></td>
                         <td>
-                            <input type="file" name="III.11" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -744,7 +744,7 @@
                         <td>CONTRIBUCIÓN POR CAPÍTULO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO Y <b>ENTREGAR LA OBRA</b></td>
                         <td>
-                            <input type="file" name="III.12" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -752,7 +752,7 @@
                         <td>EVALUACIÓN TÉCNICA DE LIBROS ANTES DE PUBLICARSE</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.13" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -760,7 +760,7 @@
                         <td>EVALUACIÓN TÉCNICA DE LIBROS DESPUÉS DE PUBLICADOS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.14" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -772,7 +772,7 @@
                         <td>TRABAJOS DE INVESTIGACIÓN PUBLICADOS EN REVISTAS DE DIFUSIÓN NACIONAL CON ARBITRAJE</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.15.1" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -780,7 +780,7 @@
                         <td>TRABAJOS DE INVESTIGACIÓN PUBLICADOS EN REVISTAS DE DIFUSIÓN NACIONAL SIN ARBITRAJE</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.15.2" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -788,7 +788,7 @@
                         <td>TRABAJOS DE INVESTIGACIÓN PUBLICADOS EN REVISTAS DE DIFUSIÓN INTERNACIONAL CON ARBITRAJE (THOMSON REUTERS) Y EN REVISTAS NACIONALES INCLUIDAS EN EL PADRÓN DEL CONACYT</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.15.3" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr class="espacio">
@@ -799,7 +799,7 @@
                         <td>PUBLICACIONES CIENTÍFICAS Y TECNOLÓGICAS EN BOLETINES INSTITUCIONALES (REGISTRADOS A TRAVÉS DEL ABOGADO GENERAL), ENSAYOS PUBLICADOS Y ARTÍCULOS DE DIVULGACIÓN SOBRE TEMAS DEL ÁREA O ESPECIALIDAD DEL BECARIO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.16" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -811,7 +811,7 @@
                         <td>INSTITUCIONAL (SIN PONENCIA PUBLICADA)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.17.1" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -819,7 +819,7 @@
                         <td>INSTITUCIONAL (CON RESUMEN PUBLICADO EN MEMORIA)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.17.2" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -827,7 +827,7 @@
                         <td>INSTITUCIONAL (PUBLICADO EN EXTENSO)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.17.3" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -835,7 +835,7 @@
                         <td>INSTITUCIONAL (OTRO TIPO DE PARTICIPACIÓN: MODERADOR, RELATOR, ORGANIZADOR, EVALUADOR DE PONENCIAS, ETC.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.17.4" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -843,7 +843,7 @@
                         <td>NACIONAL (SIN PONENCIA PUBLICADA)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.17.5" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -851,7 +851,7 @@
                         <td>NACIONAL (CON RESUMEN PUBLICADO EN MEMORIA)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.17.6" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -859,7 +859,7 @@
                         <td>NACIONAL (PUBLICADO EN EXTENSO)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.17.7" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -867,7 +867,7 @@
                         <td>NACIONAL (OTRO TIPO DE PARTICIPACIÓN: MODERADOR, RELATOR, ORGANIZADOR, EVALUADOR DE PONENCIAS, ETC.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.17.8" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -875,7 +875,7 @@
                         <td>NACIONAL (ASISTENCIA)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.17.9" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -883,7 +883,7 @@
                         <td>INTERNACIONAL (SIN PONENCIA PUBLICADA)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.17.10" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -891,7 +891,7 @@
                         <td>INTERNACIONAL (CON RESUMEN PUBLICADO EN MEMORIA)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.17.11" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -899,7 +899,7 @@
                         <td>INTERNACIONAL (PUBLICADO EN EXTENSO)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.17.12" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -907,7 +907,7 @@
                         <td>INTERNACIONAL, DERIVADO DE INVESTIGACIÓN CON REGISTRO EN LA S.I.P. Y PUBLICADO EN EXTENSO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR TRABAJO Y POR AÑO</td>
                         <td>
-                            <input type="file" name="III.17.13" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -915,7 +915,7 @@
                         <td>INTERNACIONAL (OTRO TIPO DE PARTICIPACIÓN: MODERADOR, RELATOR, ORGANIZADOR, EVALUADOR DE PONENCIAS, ETC.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.17.14" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -923,7 +923,7 @@
                         <td>INTERNACIONAL (ASISTENCIA)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.17.15" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -935,7 +935,7 @@
                         <td>CONFERENCIA NACIONAL</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.18.1" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -943,7 +943,7 @@
                         <td>CONFERENCIA INTERNACIONAL</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.18.2" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -951,7 +951,7 @@
                         <td>CONFERENCIA PROFESIOGRÁFICA O INSTITUCIONAL</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.18.3" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr class="espacio">
@@ -962,7 +962,7 @@
                         <td>INFORME TÉCNICO FINAL DE INVESTIGACIÓN SATISFACTORIA, POR CONTRATO O POR CONVENIO INSTITUCIONAL (POR ENCARGO DE INSTANCIAS EXTERNAS)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.19" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -970,7 +970,7 @@
                         <td>REGISTRO DE PATENTES (CON CRÉDITO AL I.P.N.)</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.20" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -978,7 +978,7 @@
                         <td>MARCAS O CERTIFICADOS DE INVENCIÓN (CON CRÉDITO AL I.P.N.)</td>
                         <td>1 DOCUMENTO EN UN ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.21" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -986,7 +986,7 @@
                         <td>DESARROLLO DE PROCESOS INDUSTRIALES (CON CRÉDITO AL I.P.N.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR CONVENIO</td>
                         <td>
-                            <input type="file" name="III.22" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -994,7 +994,7 @@
                         <td>DISEÑO Y SELECCIÓN DE EQUIPO PARA LA IMPLANTACIÓN DE INDUSTRIAS (CON CRÉDITO AL I.P .N.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR CONVENIO</td>
                         <td>
-                            <input type="file" name="III.23" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1002,7 +1002,7 @@
                         <td>DISEÑO DE PLANTAS PILOTO, PROTOTIPOS E INSTRUMENTOS (CON CRÉDITO AL I.P.N.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR CONVENIO</td>
                         <td>
-                            <input type="file" name="III.24" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                       <tr>
@@ -1010,7 +1010,7 @@
                         <td>CONSULTORÍA INDUSTRIAL O ASESORÍA A LAS COMUNIDADES, AVALADAS POR EL USUARIO (CON CRÉDITO AL I.P.N.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR CONVENIO</td>
                         <td>
-                            <input type="file" name="III.25" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1018,7 +1018,7 @@
                         <td>DESARROLLO DE TÉCNICAS AGRONÓMICAS, ADMINISTRATIVAS, ETC. (CON CRÉDITO AL I.P.N.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR CONVENIO</td>
                         <td>
-                            <input type="file" name="III.26" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1026,7 +1026,7 @@
                         <td>ADAPTACIÓN DE PROCESOS INDUSTRIALES (CON CRÉDITO AL I.P.N.)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR CONVENIO</td>
                         <td>
-                            <input type="file" name="III.27" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1038,7 +1038,7 @@
                         <td>DESARROLLO DE PROGRAMAS DE CÓMPUTO DE INVESTIGACIÓN O DIDÁCTICOS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                            <input type="file" name="III.28.1" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1046,7 +1046,7 @@
                         <td>ADAPTACIÓN DE PROGRAMAS DE CÓMPUTO DE INVESTIGACIÓN O DIDÁCTICOS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                          <input type="file" name="III.28.2" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1058,7 +1058,7 @@
                         <td>NIVEL MEDIO SUPERIOR O SUPERIOR</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.29.1" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1066,7 +1066,7 @@
                         <td>NIVEL POSGRADO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.29.2" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1078,7 +1078,7 @@
                         <td>NIVEL MEDIO SUPERIOR</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                          <input type="file" name="III.29.3.1" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1086,7 +1086,7 @@
                         <td>NIVEL SUPERIOR</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                          <input type="file" name="III.29.3.2" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1094,7 +1094,7 @@
                         <td>MAESTRÍA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                          <input type="file" name="III.29.3.3" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1102,7 +1102,7 @@
                         <td>DOCTORADO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                          <input type="file" name="III.29.3.4" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1110,7 +1110,7 @@
                         <td>ESPECIALIZACIÓN O DIPLOMADO CON TESINA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                          <input type="file" name="III.29.3.5" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr class="espacio">
@@ -1120,7 +1120,7 @@
                         <td>DOMINIO DEL IDIOMA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.30" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1132,7 +1132,7 @@
                         <td>MIEMBRO DE JURADO PARA PREMIOS INTERNACIONALES</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.31.1" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1140,7 +1140,7 @@
                         <td>MIEMBRO DE JURADO PARA PREMIOS NACIONALES</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.31.2" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1148,7 +1148,7 @@
                         <td>MIEMBRO DE JURADO PARA PREMIOS DE CATÁLOGO DE DISTINCIONES ACADÉMICAS</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.31.3" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr class="espacio">
@@ -1159,7 +1159,7 @@
                         <td>SINODAL PARA EXAMEN DE OPOSICIÓN, POR PARTE DE LA ACADEMIA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                            <input type="file" name="III.32" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1167,7 +1167,7 @@
                         <td>EVALUADOR DE PROYECTOS DE INVESTIGACIÓN (CONACYT, CONADE, S.I.P., CINVESTAV Y OTROS SIMILARES)</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.33" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1175,7 +1175,7 @@
                         <td>EVALUADOR DE E.D.D.</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.33.1" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1187,7 +1187,7 @@
                         <td>CIRCULACIÓN NACIONAL</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.34.1" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1195,7 +1195,7 @@
                         <td>CIRCULACIÓN INTERNACIONAL</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.34.2" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                      <tr>
@@ -1207,7 +1207,7 @@
                         <td>PREMIO INTERNACIONAL</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.35.1" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1215,7 +1215,7 @@
                         <td>PREMIO NACIONAL</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.35.2" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr class="espacio">
@@ -1226,7 +1226,7 @@
                         <td>MIEMBRO DEL SISTEMA NACIONAL DE INVESTIGADORES</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                          <input type="file" name="III.36" id="archivo"></input>
+                          <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1234,7 +1234,7 @@
                         <td>PROFESOR INVITADO POR UNA INSTITUCIÓN EDUCATIVA DIFERENTE DEL I.P.N.</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.37" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1242,7 +1242,7 @@
                         <td>MENCIÓN HONORÍFICA OBTENIDA POR EL DOCENTE EN SU LICENCIATURA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.38" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1250,7 +1250,7 @@
                         <td>MENCIÓN HONORÍFICA OBTENIDA POR EL DOCENTE EN EL EXAMEN DE GRADO DE MAESTRÍA</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.39" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1258,7 +1258,7 @@
                         <td>MENCIÓN HONORÍFICA OBTENIDA POR EL DOCENTE EN EL DOCTORADO</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO</td>
                         <td>
-                            <input type="file" name="III.40" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr>
@@ -1266,7 +1266,7 @@
                         <td>COMISIONES ACADÉMICAS EN LAS ESCUELAS, CENTROS O UNIDADES DEL I.P.N.</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                            <input type="file" name="III.41" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                     <tr class="ultimo">
@@ -1274,7 +1274,7 @@
                         <td>COMISIONES ACADÉMICAS A NIVEL INSTITUCIONAL Y NACIONAL</td>
                         <td>DOCUMENTOS EN UN SOLO ARCHIVO POR AÑO</td>
                         <td>
-                            <input type="file" name="III.42" id="archivo"></input>
+                            <input type="file" name="archivo[]"></input>
                         </td>
                     </tr>
                 </tbody>

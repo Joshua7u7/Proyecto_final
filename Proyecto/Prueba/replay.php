@@ -6,44 +6,27 @@
   </head>
   <body>
     <div class="contenedor">
-      <h1>Aprendiendo PHP</h1>
-      </*?php $nombre = $_FILES['I_1']['name'] ?>
-      <pre>
-        </*?php echo $nombre ?>
-      </pre>
       <?php
-        $carpeta = '../Documentos_Entregados/';
-        
-        for($i=1 ; $i<7 ; $i++){
-          $codigo= 'I_' . $i;
-          $nombre = $_FILES[$codigo]['name'];
+        $carpeta = '../Documentos/';
+
+        for($i=0 ; $i<136 ; $i++){
+          $nombre = $_FILES['archivo']['name'][$i];
           if(isset($nombre)){
             echo $nombre . "<br>";
             $path = $carpeta . $nombre;
-            $tipo = $_FILES[$codigo]['type'];
             if (file_exists($path)) {
               echo "El fichero $nombre existe" . '<br>';
             } else {
               echo "El fichero $nombre no existe" . '<br>';
-              move_uploaded_file($_FILES[$codigo]['tmp_name'],
+              move_uploaded_file($_FILES['archivo']['tmp_name'][$i],
   	          $path);
-              $codigo_sql = 'I.' . $i;
+              $codigo_sql =  $i+1;
               include_once 'includes/funciones/funciones.php';
-              insertar_base($path, $codigo_sql, $tipo);
+              insertar_base($path, $codigo_sql);
             }
           }
         }
       ?>
-
-      <script type="text/javascript">
-        window.onload=cargar;
-
-        function cargar()
-        {
-           window.open("../HTML/Exito.html","_self");
-        }
-
-      </script>
     </div>
   </body>
 </html>

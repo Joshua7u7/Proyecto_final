@@ -70,37 +70,37 @@ else
 $puntaje_final=0.15*$PAD+0.6*$CDD+0.25*$DD;
 
 
-if($puntaje_final>=0 and $puntaje_final<=390)
+if($puntaje_final>=700 and $puntaje_final<=1499)
 {
 	$nivel=1;
 }
 
-if($puntaje_final>390 and $puntaje_final<=600)
+if($puntaje_final>=1500 and $puntaje_final<=2299)
 {
 	$nivel=2;
 }
 
-if($puntaje_final>600 and $puntaje_final<=780)
+if($puntaje_final>=2300 and $puntaje_final<=3099)
 {
 	$nivel=3;
 }
 
-if($puntaje_final>780 and $puntaje_final<=1040)
+if($puntaje_final>=3100 and $puntaje_final<=3999)
 {
 	$nivel=4;
 }
 
-if($puntaje_final>1040 and $puntaje_final<=1250)
+if($puntaje_final>=4000 and $puntaje_final<=4999)
 {
 	$nivel=5;
 }
 
-if($puntaje_final>1250 and $puntaje_final<=1406)
+if($puntaje_final>=5000 and $puntaje_final<=5999)
 {
 	$nivel=6;
 }
 
-if($puntaje_final>1406 and $puntaje_final<=1800)
+if($puntaje_final>=6000)
 {
 	$nivel=7;
 }

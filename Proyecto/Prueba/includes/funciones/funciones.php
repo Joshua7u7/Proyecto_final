@@ -1,5 +1,5 @@
 <?php
-  function insertar_base(&$path, &$codigo_sql, &$tipo){
+  function insertar_base(&$path, &$codigo_sql){
     try {
       require('includes/funciones/conexion.php');
       $sql= " SELECT id_act FROM actividad WHERE actividad.codigo_act = " . "'$codigo_sql'";
@@ -12,7 +12,7 @@
     $id_actividad = $obj_actividad['id_act'];
     echo "<h1>".$id_actividad."</h1>";
     
-$gestor=fopen("C:/xampp/htdocs/Proyecto_final/Proyecto/Bases de datos/Registro/inicio.txt", "r");
+$gestor=fopen("C://xampp/htdocs/Proyecto_final/Proyecto/Bases de datos/Registro/inicio.txt", "r");
     $contador=1;
 
 while(!feof($gestor))
@@ -45,12 +45,12 @@ $obs=" ";
 $conn->close();
     try {
       require('includes/funciones/conexion.php');
-      $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`,`observacion`,`valor_obtenido`) VALUES (NULL, " . "'$path'".", '$iid' , ". "'$id_actividad'".",'$obs',0)";
+      $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`,`observacion`,`valor_obtenido`) VALUES (NULL, " . "'$path'".", '$iid' , ". "'$codigo_sql'".",'$obs',0)";
       $resultado= $conn->query($sql2);
     } catch (Exception $e) {
       echo $e->getMessage();
     }
-    $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`,`observacion`,`valor_obtenido`) VALUES (NULL, " . "'$path'".",'$iid', ". "'$id_actividad'".",'$obs',0)";
+    $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`,`observacion`,`valor_obtenido`) VALUES (NULL, " . "'$path'".",'$iid', ". "'$codigo_sql'".",'$obs',0)";
     echo "<h1>".$sql2."</h1>";
     $conn->close();
 
