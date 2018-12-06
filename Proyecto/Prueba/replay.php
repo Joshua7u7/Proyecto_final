@@ -7,7 +7,7 @@
   <body>
     <div class="contenedor">
       <?php
-        $carpeta = '../Documentos/';
+        $carpeta = '../Documentos_Entregados/';
 
         for($i=0 ; $i<136 ; $i++){
           $nombre = $_FILES['archivo']['name'][$i];

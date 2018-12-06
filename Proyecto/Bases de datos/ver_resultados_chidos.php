@@ -79,7 +79,7 @@ $res=mysqli_query($conexion,$Consulta);
 		{
 			?>
 			<tr>
-				<td><?php echo $fila['codigo_arch']?></td>
+				<td><?php echo $fila['codigo_act']?></td>
 				<td><?php echo $fila['nombre_act']?></td>
 				<td><?php echo $fila['valor']?></td>
 				<td> <a href="<?php echo $fila['nombre_arch'] ?>">

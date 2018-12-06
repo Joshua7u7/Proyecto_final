@@ -43,7 +43,8 @@ create table Usuario
       id_usuario int(3) not null,
       codigo_arch int(5) not null,
       observacion varchar(30) not null,
-      valor_obtenido float(100,4) not null
+      valor_obtenido float(100,4) not null,
+      revisado int(3) not null
       );
 
 

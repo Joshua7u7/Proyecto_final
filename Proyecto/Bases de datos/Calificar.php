@@ -11,9 +11,8 @@ if($_POST)
 	$tamaño=count($observaciones);
 	$posicion=0;
 
-	echo $id;
 
-	$Consulta="select * from actividad a ,archivo ar ,usuario u where codigo_arch=id_act and  ar.id_usuario=u.id_usuario and u.id_usuario='$id'";
+	$Consulta="select * from actividad a ,archivo ar ,usuario u where codigo_arch=id_act and  ar.id_usuario=u.id_usuario and u.id_usuario='$id' and ar.revisado=0";
 	$resultado=mysqli_query($conexion,$Consulta);
 
 	while(($fila=mysqli_fetch_array($resultado)))
@@ -25,6 +24,10 @@ if($_POST)
 		mysqli_query($conexion,$Consulta);
 		$posicion+=1;
 	}
+$jaja=mysqli_query($conexion,"Select puntaje from estado where id_usuario='$id'");
+$ja=mysqli_fetch_array($jaja);
+
+$puntaje_final=$ja['puntaje'];
 
 $consulta_pad="select SUM(valor_obtenido) from actividad,archivo where id_act>=1 and id_act<7 and id_act=codigo_arch and id_usuario='$id'";
 $consulta_cdd="select SUM(valor_obtenido) from actividad,archivo where id_act>=7 and id_act<64 and id_act=codigo_arch and id_usuario='$id'";
@@ -67,8 +70,9 @@ else
 	$DD=0;
 }
 
-$puntaje_final=0.15*$PAD+0.6*$CDD+0.25*$DD;
+$puntaje_final+=0.15*$PAD+0.6*$CDD+0.25*$DD;
 
+$nivel=0;
 
 if($puntaje_final>=700 and $puntaje_final<=1499)
 {
@@ -112,3 +116,52 @@ mysqli_query($conexion,$Consulta_final);
 
 }	
 ?>
+
+ <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    body
+    {
+    	background-color: #AED6F1;
+    }
+    .imagen
+    {
+      width: 50px;
+      margin-left: 100px;
+      margin-top: 50px;
+    }
+
+    .imagen img
+    {
+    	width: 500px;
+    	height: 300px;
+    }
+  </style>
+    </head>
+    <body>
+    
+     <div class="alert alert-success">
+    <strong>Bien hecho!</strong> se ha calificado al profesor
+    <?php
+    $x=mysqli_query($conexion,"Select * from usuario where id_usuario='$id'");
+    $y=mysqli_fetch_array($x);
+    echo " ".$y['nombre'];
+
+    mysqli_query($conexion,"Update archivo set revisado=1 where id_usuario='$id' ");
+    ?>
+  </div>
+
+  <div class="imagen">
+    <img src="https://www.eoi.es/blogs/alfredo-fernandez-lorenzo/files/2016/03/Felicidad-2.jpg">
+  </div>
+    </body>
+    </html>

@@ -94,12 +94,17 @@ if($_POST)
 	{
 		$consulta="update estado set revision=1 where id_usuario='$id'";
 		mysqli_query($conexion,$consulta);
+
+    ?>
+    <script type="text/javascript">
+      alert("¡Solicitud realizada con éxito!")
+    </script>
+    <?php
 	}
 
 }
 
 
 ?>
-
 </body>
 </html>

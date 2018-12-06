@@ -1,0 +1,6 @@
+El sistema operativo linux tiene muchos comandos que pueden ser muy útiles para el usuario ya
+que hay personas que suelen usar la linea de comandos en lugar del entrono gráfico, uno de los
+comandos mas utilizados es ls que nos permite ver todos los archivos en un directorio, tambien
+esta cp que nos permite copiar archivos y demás comandos, podemos crear pausas en un proceso usando
+pw. Estos comandos nos permiten realizar cosas de seguridad, desarrollo, entre otras. Es un sistema
+operativo muy completo aun que al inicio no es tan fácil de usar. 

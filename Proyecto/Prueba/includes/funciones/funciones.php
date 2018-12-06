@@ -45,14 +45,16 @@ $obs=" ";
 $conn->close();
     try {
       require('includes/funciones/conexion.php');
-      $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`,`observacion`,`valor_obtenido`) VALUES (NULL, " . "'$path'".", '$iid' , ". "'$codigo_sql'".",'$obs',0)";
+      $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`,`observacion`,`valor_obtenido`,`revisado`) VALUES (NULL, " . "'$path'".", '$iid' , ". "'$codigo_sql'".",'$obs',0,0)";
       $resultado= $conn->query($sql2);
     } catch (Exception $e) {
       echo $e->getMessage();
     }
-    $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`,`observacion`,`valor_obtenido`) VALUES (NULL, " . "'$path'".",'$iid', ". "'$codigo_sql'".",'$obs',0)";
+    $sql2= " INSERT INTO `archivo` (`id_arch`, `nombre_arch`, `id_usuario`, `codigo_arch`,`observacion`,`valor_obtenido`,`revisado`) VALUES (NULL, " . "'$path'".",'$iid', ". "'$codigo_sql'".",'$obs',0,0)";
     echo "<h1>".$sql2."</h1>";
     $conn->close();
 
   }
 ?>
+
+

@@ -10,7 +10,7 @@ if($_GET)
 	$apellido=$_GET['apellido'];
 }
 
-	$Consulta="select * from actividad a ,archivo ar ,usuario u where codigo_arch=id_act and  ar.id_usuario=u.id_usuario and u.id_usuario='$id'";
+	$Consulta="select * from actividad a ,archivo ar ,usuario u where codigo_arch=id_act and  ar.id_usuario=u.id_usuario and u.id_usuario='$id' and ar.revisado=0";
 	$result=mysqli_query($conexion,$Consulta);
 
 ?>
@@ -97,8 +97,12 @@ if($_GET)
 				<td>
 					<select name="obs[]">
 						<option value="Ninguna">Ninguna</option>
-          				<option value="Observacion 1">Observacion 1</option>
-          				<option value="Observacion 2">Observacion 2</option>
+          				<option value="No corresponde al apartado indicado">No corresponde al apartado indicado</option>
+          				<option value="No se distingue, le falta resolucion al escaneo">No se distingue, le falta resolucion al escaneo</option>
+          				<option value="Mover a otro apartado">Mover a otro apartado</option>
+          				<option value="No corresponde el periodo">No corresponde el periodo</option>
+          				<option value="Esta evidencia ya fue considerada en otro periodo">Esta evidencia ya fue considerada en otro periodo</option>
+          				<option value="Le falta comprobante">Le falta comprobante</option>
 					</select>
 				</td>
 				</tr>
