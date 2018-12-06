@@ -12,12 +12,12 @@
         for($i=0 ; $i<136 ; $i++){
           $nombre = $_FILES['archivo']['name'][$i];
           if(isset($nombre)){
-            echo $nombre . "<br>";
+           // echo $nombre . "<br>";
             $path = $carpeta . $nombre;
             if (file_exists($path)) {
-              echo "El fichero $nombre existe" . '<br>';
+              //echo "El fichero $nombre existe" . '<br>';
             } else {
-              echo "El fichero $nombre no existe" . '<br>';
+              //echo "El fichero $nombre no existe" . '<br>';
               move_uploaded_file($_FILES['archivo']['tmp_name'][$i],
   	          $path);
               $codigo_sql =  $i+1;
@@ -29,4 +29,8 @@
       ?>
     </div>
   </body>
+
+  <script type="text/javascript">
+    window.open("C://xampp/htdocs/Proyecto_final/Proyecto/HTML","_self");
+  </script>
 </html>
