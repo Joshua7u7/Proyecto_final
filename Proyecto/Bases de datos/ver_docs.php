@@ -3,12 +3,15 @@
 $conexion=null;
 $conexion=mysqli_connect('localhost','root','','becas',3306);
 
+/*Se obtienen los datos necesarios para la operacion directamente desde la pagina visualizar_profesores.php*/
 if($_GET)
 {
 	$id=$_GET['id'];
 	$nombre=$_GET['nombre'];
 	$apellido=$_GET['apellido'];
 }
+
+/*Se eleccionan todos los documentos que el docente ha entregado que no se hayan revisado aun*/
 
 	$Consulta="select * from actividad a ,archivo ar ,usuario u where codigo_arch=id_act and  ar.id_usuario=u.id_usuario and u.id_usuario='$id' and ar.revisado=0";
 	$result=mysqli_query($conexion,$Consulta);
@@ -40,6 +43,7 @@ if($_GET)
 <body>
 
 <form action="Calificar.php?Id=<?php echo $id?>" method="post">
+	<!--Se hace la tabla de los documentos y los inputs para meter su puntaje y sus observaciones-->
 	<table class="table">
 		<thead class="thead-light">
 			<th>Código</th>

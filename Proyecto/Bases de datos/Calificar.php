@@ -3,6 +3,9 @@
 $conexion=null;
 $conexion=mysqli_connect('localhost','root','','becas',3306);
 
+/*Se obtienen las calificaciones y las observaciones otorgadas a
+los documentos del docente*/
+
 if($_POST)
 {
 	$observaciones=$_POST['obs'];
@@ -11,9 +14,14 @@ if($_POST)
 	$tamaño=count($observaciones);
 	$posicion=0;
 
+/*Se seleccionan los documentos a revisar con la siguiente consulta*/
 
 	$Consulta="select * from actividad a ,archivo ar ,usuario u where codigo_arch=id_act and  ar.id_usuario=u.id_usuario and u.id_usuario='$id' and ar.revisado=0";
 	$resultado=mysqli_query($conexion,$Consulta);
+
+/*Aqui se empieza a asignar la calificacion otorgada con su respectiva
+observacion 
+*/
 
 	while(($fila=mysqli_fetch_array($resultado)))
 	{		
@@ -29,9 +37,16 @@ $ja=mysqli_fetch_array($jaja);
 
 $puntaje_final=$ja['puntaje'];
 
+/*Las siguientes consultas son para obtener los distintos puntajes obtenidos
+del pad, cdd y dd */
+
 $consulta_pad="select SUM(valor_obtenido) from actividad,archivo where id_act>=1 and id_act<7 and id_act=codigo_arch and id_usuario='$id'";
 $consulta_cdd="select SUM(valor_obtenido) from actividad,archivo where id_act>=7 and id_act<64 and id_act=codigo_arch and id_usuario='$id'";
 $consulta_dd="select SUM(valor_obtenido) from actividad,archivo where id_act>=64 and id_act<137 and id_act=codigo_arch and id_usuario='$id'";
+
+
+/*Se comienza a hacer la suma de cada uno de los valores obtenidos
+por las consultas anteriores*/
 
 $res=mysqli_query($conexion,$consulta_pad);
 $PAD_r=mysqli_fetch_array($res);
@@ -74,6 +89,11 @@ $puntaje_final+=0.15*$PAD+0.6*$CDD+0.25*$DD;
 
 $nivel=0;
 
+/*
+Se empieza a asignar el nivel de beca dependiendo del puntaje que tiene
+el docente con los documentos entregados
+*/
+
 if($puntaje_final>=700 and $puntaje_final<=1499)
 {
 	$nivel=1;
@@ -108,6 +128,8 @@ if($puntaje_final>=6000)
 {
 	$nivel=7;
 }
+
+/*Se actualiza el estado del docente*/
 
 $Consulta_final="update estado set puntaje='$puntaje_final', nivel_beca='$nivel' where id_usuario='$id'";
 

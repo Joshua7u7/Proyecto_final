@@ -3,6 +3,7 @@ $conexion=null;
 
 $conexion=mysqli_connect('localhost','root','','becas',3306);
 
+/*Se obtienen los datos del formulario de inicio de sesion.html*/
 if($_GET)
 {
     $nempleado=$_GET['nombre'];
@@ -13,8 +14,10 @@ if($_GET)
 
     $nombre=$y['nombre'];
     
+    /*Se obtiene el nombre de usuario y la contraseña de usuario y cuenta para poder hacer validaciones a continuacion*/
     $consulta_1=" Select nombre_usuario,contrasena from cuenta where nombre_usuario='$nombre' and contrasena='$contraseña'";
 
+/*Se guarda su registro en un txt para poder hacer operaciones en otros php*/
     $archivo=fopen("Registro/inicio.txt", "w");
     fwrite($archivo, $nombre);
     fwrite($archivo,"\n".$contraseña);
@@ -22,6 +25,8 @@ if($_GET)
     $Resultado=mysqli_query($conexion,$consulta_1);
     $Fila=mysqli_fetch_array($Resultado);
 
+
+    /*Se checa que exista el usuario en el sistema para poder acceder a su perfil*/
     if($Fila>0)
     {
       ?>
@@ -37,6 +42,7 @@ if($_GET)
                            and nombre=nombre_usuario and nombre='$nombre'";
               $Resultado=mysqli_query($conexion,$consulta_1);
               $fila=mysqli_fetch_array($Resultado);
+              /*Se verifica que tipo de usuario es para entrar a su perfil*/
               if($fila['tipo_usuario']=="Administrador")
               {
                 ?>
@@ -61,7 +67,10 @@ if($_GET)
       <?php
     }
     else
+      /*En caso de no existir en el sistema se muestra una */
+    {
       ?>
+    
     <!DOCTYPE html>
     <html>
     <head>
@@ -106,6 +115,6 @@ if($_GET)
     </html>
     <?php
 }
-
+}
 mysqli_close($conexion);
 ?>

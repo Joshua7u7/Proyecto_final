@@ -3,6 +3,11 @@ $conexion=null;
 
 $conexion=mysqli_connect('localhost','root','','becas',3306);
 
+/*
+Se reciben los datos del formulario hecho en registro.html 
+para poder procesarlos y registrar a la persona en el sistema
+*/
+
 if($_POST)
 {
 
@@ -13,6 +18,8 @@ if($_POST)
   $tipo_usuario=$_POST['t_u'];
   $nacimiento=$_POST['fecha'];
   $N_empleado=$_POST['N_empleado'];
+
+/*Se verifica que la persona no se este registrando por segunda vez*/
 
   $x=mysqli_query($conexion,"Select * from usuario where nombre='$nombre' and apellidos='$apellido' and numero_empleado='$N_empleado' ");
   $y=mysqli_fetch_array($x);
@@ -29,13 +36,19 @@ if($_POST)
   else
   {
 
+    /*Se busca el ultimo id de la base de datos para poder asignar uno nuevo*/
+
   $resultado=mysqli_query($conexion,"Select MAX(id_usuario) from usuario");
   $fila = mysqli_fetch_array($resultado);
   $id_u=$fila['MAX(id_usuario)']+1;
 
+/*Se busca el id del departamento al que pertenece el usuario*/
+
   $resultado_2=mysqli_query($conexion,"Select idD from departamento where nombre_departamento='$departamento'");
   $fila_2 = mysqli_fetch_array($resultado_2);
   $idD=$fila_2['idD'];
+
+/*Se verifica que no haya ya un administrador*/
 
   if($tipo_usuario=="Administrador")
   {
@@ -63,11 +76,18 @@ if($_POST)
   }
   else
   {
+    /*Se registra al docente en la base de datos*/
+
     mysqli_query($conexion,"Insert into usuario(id_usuario,idD,nombre,apellidos,fecha_nacimiento,numero_empleado,tipo_usuario) values
     ('$id_u','$idD','$nombre','$apellido','$nacimiento','$N_empleado','$tipo_usuario')");
 
+    /*Se registra su cuenta en la base de datos*/
+
     mysqli_query($conexion,"Insert into cuenta(idC,id_usuario,contrasena,nombre_usuario)values('$id_u','$id_u','$contraseña','$nombre')");
   }
+
+  /*Se crea un estado en ceros para el nuevo docente*/
+  
     mysqli_query($conexion,"Insert into estado(id_usuario,id_estado,nivel_beca,puntaje,revision)
       values ('$id_u,','$id_u',0,0,0)");
 }

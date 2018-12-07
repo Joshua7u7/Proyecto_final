@@ -39,6 +39,7 @@ $conexion=mysqli_connect('localhost','root','','becas',3306);
     </thead>
     <tbody>
       <?php
+      /*Se selecciona todos los datos del profesor para mostrar*/
    $result=mysqli_query($conexion,"select nombre,usuario.id_usuario,apellidos,nombre_departamento
    from usuario,departamento,estado where tipo_usuario='Docente' and usuario.idD=departamento.idD and usuario.id_usuario=estado.id_usuario and estado.revision=1");
 
@@ -46,7 +47,7 @@ $conexion=mysqli_connect('localhost','root','','becas',3306);
    while($row=mysqli_fetch_array($result))
    {
      ?>
-     
+     <!--Se crea una tabla con todos los profesores del sistema-->
       <tr>
         <td> <input type="text" name="ID"  value="<?php echo $row['id_usuario']?>" disabled> </td>
         <td><input type="text" name="NOM"  value="<?php echo $row['nombre']?>" disabled></td>

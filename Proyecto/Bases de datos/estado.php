@@ -1,5 +1,7 @@
 <?php
 
+/*En este php se muestra el estado de los docentes
+*/
 $conexion=null;
 
 $conexion=mysqli_connect('localhost','root','','becas',3306);
@@ -8,6 +10,7 @@ $gestor=fopen("Registro/inicio.txt", "r");
 
 $contador=1;
 
+/*Se busca el nombre y contraseña del docente que inicio sesion*/
 while(!feof($gestor))
 {
 	if($contador==1)
@@ -28,6 +31,8 @@ while($contador<strlen($nombre)-1)
 	$nombre_chido=$nombre_chido.$nombre[$contador];
 	$contador+=1;
 }
+
+/*Se buscan los datos generales para el docente que inicio sesion*/
 
 $consulta="select u.nombre,u.apellidos,u.id_usuario,e.nivel_beca,e.puntaje from cuenta c,usuario u,estado e where c.id_usuario=u.id_usuario and c.id_usuario=e.id_usuario and u.id_usuario=e.id_usuario and u.nombre='$nombre_chido' and c.contrasena='$contrasena'";
 
@@ -56,6 +61,8 @@ $puntaje=$fila['puntaje'];
 </head>
 <body>
 
+<!--Se comienza a hacer la tabla donde se muestra su nombre, apellido
+nivel de beca y puntaje obtenido-->
 	<table class="table">
 		<thead class="thead-dark">
             <tr class="titulo">
@@ -78,7 +85,8 @@ $puntaje=$fila['puntaje'];
         	</tr>
         </tbody>	
 	</table>
-
+<!--Se comenza a hacer la tabla para mostrar el historial de archivos entregados
+por el docente-->
 	<table class="table">
 		<thead class="thead-light">
 			<tr>

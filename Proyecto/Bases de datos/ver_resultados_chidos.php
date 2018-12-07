@@ -35,6 +35,7 @@ $fila=mysqli_fetch_array($res);
 
 $id=$fila['id_usuario'];
 
+/*Se seleccionan todos los documentos entregados por el usuario (historial de documentos)*/
 $Consulta="Select * from archivo ar, actividad ac where ar.id_usuario='$id' and ac.id_act=ar.codigo_arch";
 $res=mysqli_query($conexion,$Consulta);
 
@@ -64,6 +65,8 @@ $res=mysqli_query($conexion,$Consulta);
 </head>
 <body>
 
+<!--Se crea la tabla donde se muestra la puntuacion dada a los documentos y las observaciones que se le asignaron-->
+
 	<table class="table">
 		<thead class="thead-dark">
 			<th> <input type="" name="" value="Codigo archivo" disabled=""> </th>
@@ -85,6 +88,8 @@ $res=mysqli_query($conexion,$Consulta);
 				<td> <a href="<?php echo $fila['nombre_arch'] ?>">
 					<?php 
 					//echo $fila['nombre_arch']
+					/*Se hace un procedimiento para recortar el nombre del archivo para su muestra */
+					
 					$var=$fila['nombre_arch'];
 					$counter=0;
 					$contador_2=0;
